@@ -1,0 +1,310 @@
+
+.ipass-header {
+  background: #f5f5f5;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 11;
+
+  border-bottom: 1px solid #eee;
+  color: #444;
+  min-height: 44px;
+  padding: 14px 15px 13px;
+
+  .container{
+    margin: auto;
+    max-width: 978px;
+  }
+
+  h1{
+    color: #777;
+    float: left;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.375;
+    margin: 0;
+
+    img{
+      margin-top: -6px;
+    }
+  }
+
+  h2{
+    margin-top: 5px;
+    float: left;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.375;
+    margin: 0;
+    color: #9fa2a6;
+  }
+
+  h2:before{
+    border: solid #e5e5e5;
+    border-width: 0 0 0 1px;
+    content: "";
+    float: left;
+    height: 44px;
+    margin: 0 12px 0 14px;
+  }
+
+  .ipass-util{
+    float: right;
+    min-height: 44px;
+    margin-top: 5px;
+  }
+
+  .ipass-button{
+    background-color: #00bf8f;
+    background-image: none;
+    border: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font: 16px/25px arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    text-shadow: none;
+    padding: 5px;
+
+    font: 14px/21px arial,sans-serif;
+    padding: 7px 25px;
+  }
+}
+
+.ipass-nav {
+  position: fixed;
+  width: 100%;
+  top: 72px;
+  z-index: 11;
+  background-color: white;
+  border-bottom: 1px solid #efefef;
+  .ipass-aux{
+    margin: auto;
+    max-width: 1000px;
+  }
+
+  .nav{
+    margin-left: 15px;
+  }
+
+  .navbar-toggle{
+    background-color: #00bf8f;
+    border-color: #00bf8f;
+
+    .icon-bar{
+      background-color: white;
+    }
+  }
+
+  li{
+    margin-right: 45px;
+    a{
+      font-size: 13px;
+      color: #444;
+      font-weight: normal;
+      padding: 12px 0;
+    }
+    a.active{
+      font-weight: bold;
+    }
+  }
+}
+
+
+.page-container{
+  background-color: white;
+}
+
+
+#business-hero{
+  background: image-url('background.png') no-repeat center bottom;
+}
+
+.ipass-stage{
+  margin-top: 160px;
+  display: relative;
+
+  .holder{
+    min-height: 600px;
+    max-width: 1000px;
+    margin: auto;
+
+    .ipass-display{
+      margin: 0 auto;
+      text-align: center;
+      font-family: "open sans",arial,sans-serif;
+      color: #414042;
+      font-size: 42px;
+      font-weight: 300;
+      height: 108px;
+
+      padding: 0 20px;
+    }
+
+    h1{
+      text-align: center;
+      font-size: 42px;
+      line-height: 54px;
+      color: black;
+    }
+
+    p{
+      text-align: center;
+    }
+
+    .client-logo{
+      width: 80px;
+      height: 80px;
+    }
+
+    .clients{
+      margin-top: 50px;
+
+      .client-detail{
+        text-align: center;
+        margin-top: 50px;
+        div{
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+
+  .foreground-index{
+    background: image-url('foreground.png') no-repeat center bottom;
+    min-height: 600px;
+    position: absolute;
+    text-align: center;
+    top: 180px;
+    width: 100%;
+  }
+
+}
+
+
+
+section {
+  color: gray;
+  display: block;
+  font: 16px/25px 'Open Sans',arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+
+  .section-container{
+    &.iphone{
+      background: image-url('passbook_foreground_large.png') no-repeat center bottom;
+      border-bottom: solid 1px #dcdcdc;
+    }
+
+    &.android{
+      background: image-url('google_wallet_foreground_large.png') no-repeat center bottom;
+    }
+
+    &.secure-data{
+      background: image-url('cloud_foreground_large.png') no-repeat center bottom;
+      min-height: 390px;
+      border-bottom: solid 1px #dcdcdc;
+    }
+
+    &.click-push{
+      background: image-url('push_foreground_large.png') no-repeat center bottom;
+      min-height: 390px;
+      border-bottom: solid 1px #dcdcdc;
+    }
+
+    &.store-buttons{
+      background: image-url('add_button_foreground_large.png') no-repeat center bottom;
+      min-height: 390px;
+      border-bottom: solid 1px #dcdcdc;
+    }
+
+    &.qr-code{
+      background: image-url('barcode_foreground_large.png') no-repeat center bottom;
+      min-height: 390px;
+      border-bottom: solid 1px #dcdcdc;
+    }
+
+    &.store-analytics{
+      background: image-url('analytics_foreground_large.png') no-repeat center bottom;
+      min-height: 390px;
+    }
+
+    .simple-content{
+      margin-top: 100px;
+      h2{
+        font-weight: 300;
+      }
+    }
+    .content{
+      padding: 27px 40px 40px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      border: 2px solid #efefef;
+    }
+
+    .ipass-display{
+      font-size: 48px;
+      margin: 0 0 15px;
+      color: #333;
+      font-weight: 300;
+    }
+  }
+}
+
+.ipass-footer{
+  background: #f5f5f5;
+  clear: both;
+
+  .ipass-footer-local{
+    background: #f5f5f5;
+    border-top: 1px solid #f5f5f5;
+    min-height: 24px;
+
+    .container{
+      max-width: 987px;
+      margin: 0 auto;
+
+      .footer-top{
+        border-bottom: 1px solid rgb(229, 229, 229);
+        height: 40px;
+        width: 100%;
+      }
+
+      .consumer-footer-local{
+        margin-left: -15px;
+        font-size: 12px;
+        ul{
+          list-style: none;
+          padding-left: 0px;
+          a{
+            color: #00bf8f;
+          }
+        }
+      }
+    }
+  }
+
+  .ipass-footer-global{
+    border-top: 1px solid #eee;
+    font-size: 11px;
+    line-height: 2.19;
+    list-style: none;
+
+    .container{
+      margin: auto;
+      max-width: 990px;
+    }
+  }
+}
+
+
+.qrcode{
+  display: inline-block;
+}
+
+

@@ -1,0 +1,54 @@
+<div class="ipass-header" id="ipass-header" role="banner">
+  <div class="container">
+    <h1>
+      <a href=""><img alt="iPassStore" src=
+      "//www.iPassStore.com/resource/image/logo.png"> </a>
+    </h1>
+    <h2>
+      Home
+    </h2>
+    <div class="ipass-util">
+      <% unless current_user %>
+        <%= link_to 'Login', new_session_path, :class=>'ipass-button'%>
+        <%= link_to 'Signup', new_user_path, :class=>'ipass-button'%>
+      <% else %>
+        <%= link_to 'Logout', logout_path, :class=> 'ipass-button'%>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="ipass-nav" id="ipass-nav-x" role="navigation">
+  <div class="ipass-aux">
+
+    <div class="navbar-header">
+      <span></span>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <%= link_to 'Home', root_path%>
+        </li>
+        <li>
+          <%= link_to 'Products', products_path%>
+        </li>
+        <li>
+          <a href="#">Customers</a>
+        </li>
+        <li>
+          <%= link_to 'Store', store_path%>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

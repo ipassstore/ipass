@@ -1,0 +1,71 @@
+<section class="ipass-stage">
+  <div class="holder">
+    <div class="center-partners">
+      <h1>
+        Student Organization Partners
+      </h1>
+      <p>
+        If you would like to integrate Apple Passbook or Google Wallet to enhance your user's experience, please
+        <a href="contact.html">contact us</a>.
+      </p>
+
+      <div class="ipass-col-12 clients">
+        <div class='row'>
+          <div class='col-md-3 client-detail'>
+            <a href='javascript:;' rel='popover' class='qrcode'><%= image_tag 'client_logos/sdcc.png', :class=>'client-logo'%></a>
+            <div>SD CSSA</div>
+            <div>Membership</div>
+            <div>Greater San Diego Area</div>
+            <% if mobile_device?%>
+              <div>
+                <%= image_tag 'Add_to_Passbook.png'%>
+              </div>
+            <% else %>
+              <div class="popover_wrapper" style="display:none;">
+                <img alt="Qrcode" height="215" src="http://www.fishtrip.cn/assets/home_bg/qrcode-e5dfe7d4d71058eccb4de351e5646659.jpg" width="215">
+              </div>
+            <% end %>
+          </div>
+
+          <div class='col-md-3 client-detail'>
+            <a name="TUCSSA"><%= image_tag 'client_logos/tcssa.png', :class=>'client-logo'%></a>
+            <div>TCSSA</div>
+            <div>Membership</div>
+            <div>Tulane University</div>
+            <% if mobile_device?%>
+              <div>
+                <%= image_tag 'Add_to_Passbook.png'%>
+              </div>
+            <% else %>
+
+            <% end %>
+            <br>
+          </div>
+
+          <div class='col-md-3 client-detail'>
+            <a name="UChicagoCSSA"><%= image_tag 'client_logos/uc-cssa.png', :class=>'client-logo'%></a>
+            <div>CSSA</div>
+            <div>Membership</div>
+            <div>University of Chicago</div>
+            <div>
+              <%= image_tag 'Add_to_Passbook.png'%>
+            </div>
+          </div>
+
+          <div class='col-md-3 client-detail'>
+            <a name="UMiamiCSSA"><%= image_tag 'client_logos/um-cssa.png', :class=>'client-logo'%></a>
+
+            <div>CSSA</div>
+            <div>Membership</div>
+            <div>University of Miami</div>
+            <div>
+              <%= image_tag 'Add_to_Passbook.png'%>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

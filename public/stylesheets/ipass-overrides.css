@@ -1,0 +1,176 @@
+/* ipass overrides copied and modified from www.google.com/enterprise */
+#ipass-header h1, #ipass-header h1 a {
+  color: #777;
+}
+
+#ipass-nav-x li {
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.54;
+  margin-right: 52px;
+}
+
+#ipass-nav-x li a, #ipass-nav-x li a:hover {
+  color: #444;
+}
+
+#ipass-nav-x li a:hover, #ipass-nav-x li.active a {
+color: #444;
+}
+
+#ipass-nav-x ul + ul li a:hover,
+#ipass-nav-x ul + ul li.active a {
+  color: #444;
+}
+
+#ipass-nav-x li li a,
+#ipass-nav-x li.active li a,
+#ipass-nav-y li a,
+#ipass-nav-y li.active li a {
+  color: #444;
+}
+
+#ipass-nav-x li li a:hover,
+#ipass-nav-x li li.active a,
+#ipass-nav-x li.active li a:hover,
+#ipass-nav-x li.active li.active a,
+#ipass-nav-y li a:hover,
+#ipass-nav-y li.active a,
+#ipass-nav-y li.active li a:hover,
+#ipass-nav-y li.active li.active a {
+  color: #444;
+}
+
+#ipass-nav-x ul + ul li a {
+  color: #444;
+}
+
+#ipass-nav-x, #ipass-nav-x.ipass-compact h1 {
+  color: #454545;
+}
+
+#ipass-nav-x {
+  background-color: #fff;
+  background-image: none;
+  border-bottom: 1px solid #efefef;
+}
+
+#ipass-nav-x ul ul:after, #ipass-nav-x ul+ul:after {
+  border: none;
+  padding: 0;
+}
+
+#ipass-nav-x ul+ul {
+  border-top: 1px solid #efefef;
+  padding: 6px 0 0;
+  margin: 0 0 6px 0;
+}
+
+#ipass-nav-x.ipass-compact h1:before {
+	background: none;
+	background-color: #00BE8E;
+	border: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+#ipass-nav-x.ipass-compact.active h1:before {
+	background: none;
+	background-color: #008f6c;
+	border: none;
+  -moz-box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+#ipass-nav-x.ipass-compact h1:after,
+#ipass-nav-x.ipass-compact.active h1:after {
+  background-image: -moz-repeating-linear-gradient(rgba(0, 0, 0, 0) 0, #FFF 1px, #FFF 3px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0) 5px);
+  background-image: -ms-repeating-linear-gradient(rgba(0, 0, 0, 0) 0, #FFF 1px, #FFF 3px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0) 5px);
+  background-image: -webkit-repeating-linear-gradient(rgba(0, 0, 0, 0) 0, #FFF 1px, #FFF 3px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0) 5px);
+  background-image: repeating-linear-gradient(rgba(0, 0, 0, 0) 0, #FFF 1px, #FFF 3px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0) 5px);
+}
+
+#ipass-footer-local ul {
+    list-style: none;
+}
+
+@media only screen and (max-width: 400px) {
+  #ipass-main {
+    margin-top: 94px;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 767px) {
+  #ipass-main {
+    margin-top: 94px;
+  }
+}
+
+/***** Compact styles *****/
+#ipass-nav-x, #ipass-nav-x.ipass-compact h1 {
+  background: #fff;
+}
+
+#ipass-nav-x.ipass-compact ul ul, #ipass-nav-x.ipass-compact ul+ul {
+  background: #fff;
+  padding: 6px 0 0;
+  margin: 0 0 6px;
+}
+
+#ipass-nav-x.ipass-compact h1 + ul {
+  background: #F5F5F5;
+  color: #444;
+}
+
+#ipass-nav-x.ipass-compact h1 + ul li + li {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+@media only screen and (min-width: 767px) {
+  .ipass-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 11;
+  }
+
+  .ipass-nav {
+    position: fixed;
+    width: 100%;
+    top: 72px;
+    z-index: 11;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .ipass-nav {
+    top: 56px;
+  }
+  #ipass-header {
+    min-height: 38px;
+    padding: 11px 15px 6px;
+  }
+  #ipass-signature {
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1008px) {
+  #ipass-header .ipass-util {
+    position: relative;
+    right: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #ipass-header .ipass-util {
+    background-color: transparent!important;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    border: 0;
+  }
+}

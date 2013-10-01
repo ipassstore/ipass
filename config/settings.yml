@@ -1,0 +1,17 @@
+default: &default
+  ipassbook_domain_www: www.ipassbook.com
+  ipassbook_domain: ipassbook.com
+
+
+
+development:
+  <<: *default
+
+
+
+production:
+  <<: *default
+
+
+test:
+  <<: *default
